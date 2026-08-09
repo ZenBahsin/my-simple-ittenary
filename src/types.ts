@@ -32,6 +32,7 @@ export interface DayItinerary {
   title: string;
   subtitle: string;
   countries: string[];
+  flags: string;
   hotelName: string;
   hotelArea: string;
   items: ItineraryItem[];

@@ -74,23 +74,35 @@ export const DaySelector: React.FC<Props> = ({
                 </div>
               )}
 
-              <div className="flex items-center justify-between gap-1">
-                <span className={`text-[11px] font-bold uppercase ${
-                  isSelected 
-                    ? (isDarkMode ? 'text-cyan-300' : 'text-teal-700') 
-                    : (isDarkMode ? 'text-slate-400' : 'text-slate-500')
-                }`}>
-                  Hari {day.dayNumber}
-                </span>
-                <span className={`text-[10px] font-medium ${isDarkMode ? 'text-slate-400' : 'text-slate-500'}`}>
-                  {completedInDay}/{dayItemsCount}
+              <div className="flex items-start justify-between gap-1.5">
+                <div>
+                  <span className={`text-[11px] font-bold uppercase tracking-wide ${
+                    isSelected 
+                      ? (isDarkMode ? 'text-cyan-300' : 'text-teal-700') 
+                      : (isDarkMode ? 'text-slate-400' : 'text-slate-500')
+                  }`}>
+                    Hari {day.dayNumber}
+                  </span>
+                  <div className={`text-xs font-black ${
+                    isDarkMode ? 'text-slate-100' : 'text-slate-900'
+                  }`}>
+                    {day.dateFull.split(',')[0]}
+                  </div>
+                </div>
+                <span className="text-xs select-none tracking-tight font-sans whitespace-nowrap shrink-0 font-semibold pt-0.5">
+                  {day.flags}
                 </span>
               </div>
 
-              <div className={`text-xs font-bold truncate mt-1 ${
-                isDarkMode ? 'text-slate-100' : 'text-slate-900'
+              <div className={`text-[11px] font-medium truncate mt-1.5 flex items-center justify-between gap-1 ${
+                isDarkMode ? 'text-slate-300' : 'text-slate-600'
               }`}>
-                {day.date.replace(' 2026', '')}
+                <span>{day.date.replace(' 2026', '')}</span>
+                <span className={`text-[10px] font-semibold shrink-0 px-1.5 py-0.5 rounded ${
+                  isDarkMode ? 'bg-white/10 text-slate-300' : 'bg-slate-200/80 text-slate-700'
+                }`}>
+                  {completedInDay}/{dayItemsCount}
+                </span>
               </div>
 
               <div className={`text-[11px] truncate mt-0.5 font-medium flex items-center gap-1 ${

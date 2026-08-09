@@ -7,7 +7,8 @@ export const ITINERARY_DAYS: DayItinerary[] = [
     dateFull: 'Kamis, 13 Agustus 2026',
     title: 'Palembang – Singapura',
     subtitle: 'Jewel & Kampong Glam',
-    countries: ['Singapura'],
+    countries: ['Indonesia', 'Singapura'],
+    flags: '🇮🇩 ✈️ 🇸🇬',
     hotelName: 'HOTEL JJH',
     hotelArea: 'Kampong Glam / Bugis',
     items: [
@@ -127,6 +128,7 @@ export const ITINERARY_DAYS: DayItinerary[] = [
     title: 'Belanja & Atraksi Singapura',
     subtitle: 'Orchard, Chinatown & Marina Bay Sands',
     countries: ['Singapura'],
+    flags: '🇸🇬',
     hotelName: 'HOTEL JJH',
     hotelArea: 'Kampong Glam / Bugis',
     items: [
@@ -219,6 +221,7 @@ export const ITINERARY_DAYS: DayItinerary[] = [
     title: 'Singapura – Johor – Kuala Lumpur',
     subtitle: 'Lintas Batas Bus CW2, UTM Skudai, JPO & Flight ke KL',
     countries: ['Singapura', 'Malaysia'],
+    flags: '🇸🇬 🚌 🇲🇾 ✈️ 🇲🇾',
     hotelName: 'Ibis KLCC',
     hotelArea: 'Kuala Lumpur (Area KLCC)',
     items: [
@@ -309,6 +312,7 @@ export const ITINERARY_DAYS: DayItinerary[] = [
     title: 'Eksplorasi Kawasan KLCC',
     subtitle: 'Twin Towers, Suria KLCC, Saloma Link & Symphony Lake',
     countries: ['Malaysia'],
+    flags: '🇲🇾',
     hotelName: 'Ibis KLCC',
     hotelArea: 'Kuala Lumpur (Area KLCC)',
     items: [
@@ -420,6 +424,7 @@ export const ITINERARY_DAYS: DayItinerary[] = [
     title: 'Sejarah, Budaya & Belanja Bukit Bintang',
     subtitle: 'Batu Caves, Dataran Merdeka, Masjid Negara & Pavilion KL Walkway',
     countries: ['Malaysia'],
+    flags: '🇲🇾',
     hotelName: 'Ibis KLCC',
     hotelArea: 'Kuala Lumpur (Area KLCC)',
     items: [
@@ -522,6 +527,7 @@ export const ITINERARY_DAYS: DayItinerary[] = [
     title: 'Kuala Lumpur – Kepulangan ke Palembang',
     subtitle: 'Check-out Ibis KLCC, Transportasi ke KLIA T2 & Flight AK-462',
     countries: ['Malaysia', 'Indonesia'],
+    flags: '🇲🇾 ✈️ 🇮🇩',
     hotelName: 'Ibis KLCC',
     hotelArea: 'Check-out & Bandara KLIA T2',
     items: [

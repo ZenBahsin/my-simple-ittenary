@@ -20,13 +20,13 @@ export default function App() {
   const [selectedDay, setSelectedDay] = useState<number | null>(1);
   const [searchQuery, setSearchQuery] = useState<string>('');
   
-  // Theme state (Dark or Light)
+  // Theme state (Light mode as default)
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     try {
       const saved = localStorage.getItem('sg_jo_kl_theme');
-      return saved ? JSON.parse(saved) : true;
+      return saved ? JSON.parse(saved) : false;
     } catch (e) {
-      return true;
+      return false;
     }
   });
 
@@ -194,14 +194,15 @@ export default function App() {
               }`}>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div>
-                    <div className="flex items-center gap-2">
-                      <span className={`px-2.5 py-0.5 rounded text-xs font-bold uppercase border ${
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className={`px-2.5 py-0.5 rounded text-xs font-bold uppercase border shrink-0 ${
                         isDarkMode 
                           ? 'bg-cyan-500/20 text-cyan-300 border-cyan-400/30' 
                           : 'bg-teal-100 text-teal-800 border-teal-200'
                       }`}>
-                        Hari {dayObj.dayNumber} dari 6
+                        Hari {dayObj.dayNumber} ({dayObj.dateFull.split(',')[0]}) dari 6
                       </span>
+                      <span className="text-sm select-none font-sans font-semibold whitespace-nowrap shrink-0">{dayObj.flags}</span>
                       <span className={`text-xs font-semibold ${isDarkMode ? 'text-slate-400' : 'text-slate-500'}`}>
                         {dayObj.dateFull}
                       </span>
@@ -298,7 +299,7 @@ export default function App() {
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-cyan-400" />
                       <span className="text-xs font-bold uppercase tracking-wider text-cyan-300">
-                        Hari {day.dayNumber}: {day.date}
+                        Hari {day.dayNumber} ({day.dateFull.split(',')[0]}): {day.date}
                       </span>
                       <span className="text-xs text-slate-300 font-medium hidden sm:inline">• {day.title}</span>
                     </div>
@@ -376,11 +377,11 @@ export default function App() {
         isDarkMode ? 'border-white/10 bg-slate-950/60' : 'border-slate-200 bg-white/80'
       }`}>
         <div className="max-w-7xl mx-auto px-4">
-          <p className={`text-xs font-bold ${isDarkMode ? 'text-slate-300' : 'text-slate-700'}`}>
-            Panduan Perjalanan Mandiri Singapura • Johor • Kuala Lumpur 2026
+          <p className={`text-xs sm:text-sm font-bold ${isDarkMode ? 'text-slate-200' : 'text-slate-800'}`}>
+            ✈️ Catatan & Itinerary Liburan Singapura • Johor • Kuala Lumpur 2026
           </p>
-          <p className={`text-[11px] mt-1 ${isDarkMode ? 'text-slate-500' : 'text-slate-500'}`}>
-            Dirancang khusus dengan dukungan Tema Terang/Gelap, Kalkulator Kurs Realtime, dan kemudahan akses di jalan.
+          <p className={`text-xs mt-1.5 font-medium ${isDarkMode ? 'text-slate-400' : 'text-slate-600'}`}>
+            Spesial dibuat oleh <span className="font-bold text-amber-500">Zen</span> untuk <span className="font-bold text-amber-500">Maryam</span> ❤️ Dilengkapi rute MRT/Bus, kuliner halal, hotel, dan kalkulator kurs realtime!
           </p>
         </div>
       </footer>
