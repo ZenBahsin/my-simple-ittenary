@@ -247,26 +247,31 @@ export const ITINERARY_DAYS: DayItinerary[] = [
       {
         id: 'd3-3',
         time: '10.00 – 12.00',
-        activity: 'Kunjungan ke UTM Skudai',
-        transportMode: 'BUS',
-        transportLabel: 'BUS T30',
-        routeDetails: 'Setelah lolos imigrasi Malaysia di JB CIQ, jalan ke terminal bus lantai dasar JB Sentral → Naik bus Causeway Link T30 → Turun di area kampus UTM Skudai.',
-        location: 'Universiti Teknologi Malaysia (UTM) Skudai',
-        highlights: ['Bus Causeway Link T30 dari JB Sentral', 'Area Kampus UTM Skudai']
+        activity: 'Perjalanan Grab & Kunjungan ke Kolej 10 UTM Skudai',
+        transportMode: 'GRAB',
+        transportLabel: 'GRABCAR (±25–35 MENIT)',
+        routeDetails: 'Setelah lolos imigrasi Malaysia di JB CIQ, pesan GrabCar dari titik jemput JB Sentral/JB CIQ langsung menuju Kolej 10 UTM Skudai. Jarak tempuh sekitar 22–24 km via Lebuhraya Skudai (Route 1) dengan estimasi waktu 25–35 menit. Lebih cepat, nyaman, dan langsung turun tepat di depan Kolej 10 UTM tanpa perlu ganti bus.',
+        location: 'Kolej 10, Universiti Teknologi Malaysia (UTM) Skudai',
+        highlights: [
+          'GrabCar langsung dari JB Sentral / JB CIQ ke Kolej 10 UTM',
+          'Estimasi durasi: 25 – 35 menit (~23 km)',
+          'Estimasi tarif Grab: RM 25 – RM 35',
+          'Langsung tiba di lokasi Kolej 10 tanpa repot transit'
+        ]
       },
       {
         id: 'd3-4',
-        time: '12.00 – 13.30',
+        time: '12.00 – 13.00',
         activity: 'Makan Siang',
         transportMode: 'JALAN_KAKI',
-        transportLabel: 'KULINER LOKAL',
-        routeDetails: 'Makan siang kuliner lokal di sekitar area Skudai/Kulai atau kantin kampus UTM.',
-        location: 'Area Skudai / Kulai / Kantin UTM',
+        transportLabel: 'KULINER LOKAL / KANTIN UTM',
+        routeDetails: 'Makan siang kuliner lokal di kantin kampus UTM Skudai / Kolej 10 atau cafe sekitar area Skudai.',
+        location: 'Kantin UTM / Kolej 10 Skudai',
         isHalalFood: true
       },
       {
         id: 'd3-5',
-        time: '13.30 – 17.00',
+        time: '13.00 – 17.00',
         activity: 'Johor Premium Outlets (JPO)',
         transportMode: 'GRAB',
         transportLabel: 'GRAB MALAYSIA',
