@@ -427,7 +427,7 @@ export const ITINERARY_DAYS: DayItinerary[] = [
     date: '17 Agt 2026',
     dateFull: 'Senin, 17 Agustus 2026',
     title: 'Sejarah, Budaya & Belanja Bukit Bintang',
-    subtitle: 'Batu Caves, Dataran Merdeka, Masjid Negara & Pavilion KL Walkway',
+    subtitle: 'Batu Caves, Chinatown, Pasar Seni, Dataran Merdeka & Pavilion KL',
     countries: ['Malaysia'],
     flags: '🇲🇾',
     hotelName: 'Ibis KLCC',
@@ -436,92 +436,75 @@ export const ITINERARY_DAYS: DayItinerary[] = [
       {
         id: 'd5-1',
         time: '07.30 – 08.15',
-        activity: 'Sarapan Pagi',
+        activity: 'Sarapan Pagi di ibis KLCC',
         transportMode: 'JALAN_KAKI',
         transportLabel: 'SARAPAN HOTEL',
-        routeDetails: 'Persiapan fisik dengan sarapan pagi di Ibis KLCC sebelum rute semi luar kota.',
+        routeDetails: 'Persiapan fisik dengan sarapan pagi di Ibis KLCC sebelum rute eksplorasi budaya dan sejarah KL.',
         location: 'Ibis KLCC'
       },
       {
         id: 'd5-2',
-        time: '08.15 – 10.30',
+        time: '08.15 – 11.00',
         activity: 'Mengeksplorasi Batu Caves',
         transportMode: 'LRT_KTM',
         transportLabel: 'LRT + KTM KOMUTER',
-        routeDetails: 'Dari Stasiun LRT KLCC, naik Jalur Kelana Jaya (Merah) menuju stasiun transit KL Sentral → Pindah ke peron KTM Komuter (Line Biru Tua) → Naik kereta tujuan akhir langsung turun di Stasiun Batu Caves (lokasi persis di depan tangga pelangi).',
+        routeDetails: 'Dari Stasiun LRT KLCC, naik Jalur Kelana Jaya (Merah) menuju KL Sentral → Pindah peron KTM Komuter (Line Biru Tua) → Naik kereta tujuan akhir Stasiun Batu Caves (persis di depan tangga pelangi).',
         location: 'Batu Caves',
         highlights: ['Kereta KTM Komuter langsung', 'Tangga Pelangi 272 anak tangga', 'Patung Lord Murugan']
       },
       {
         id: 'd5-3',
-        time: '10.30 – 11.30',
-        activity: 'Foto di Depan Istana Negara',
-        transportMode: 'GRAB',
-        transportLabel: 'GRAB MALAYSIA',
-        routeDetails: 'Dari Batu Caves, gunakan layanan Grab Malaysia menuju gerbang utama Istana Negara untuk berfoto dokumentasi resmi.',
-        location: 'Istana Negara (Royal Palace)',
-        highlights: ['Gerbang utama Istana Negara', 'Dokumentasi resmi']
+        time: '11.00 – 14.30',
+        activity: 'Eksplorasi Heritage: Chinatown (Petaling Street / Kwai Chai Hong), Pasar Seni, Dataran Merdeka & Sholat/Makan Siang Halal',
+        transportMode: 'LRT_KTM',
+        transportLabel: 'KTM / LRT / GRAB',
+        routeDetails: 'Dari Batu Caves, naik KTM Komuter ke Stasiun Pasar Seni / Kuala Lumpur. Jelajahi Chinatown (Petaling Street & lorong seni Kwai Chai Hong), Pasar Seni (Central Market), Dataran Merdeka & Masjid Negara. Dilanjutkan sholat & makan siang kuliner halal lokal.',
+        location: 'Chinatown (Petaling Street & Kwai Chai Hong), Pasar Seni, Dataran Merdeka & Masjid Negara',
+        isHalalFood: true,
+        highlights: [
+          'Chinatown & Kwai Chai Hong (spot foto legendaris)',
+          'Pasar Seni (Central Market) cenderamata',
+          'Dataran Merdeka & Bangunan Sultan Abdul Samad',
+          'Masjid Negara & Makan Siang Halal'
+        ]
       },
       {
         id: 'd5-4',
-        time: '11.30 – 13.00',
-        activity: 'Dataran Merdeka & Bangunan Sultan Abdul Samad',
-        transportMode: 'GRAB',
-        transportLabel: 'GRAB / LUNCH',
-        routeDetails: 'Dari Istana Negara, naik Grab jarak dekat menuju komplek bersejarah Dataran Merdeka. Lanjutkan makan siang santai di kafe/restoran sekitar lokasi.',
-        location: 'Dataran Merdeka',
-        isHalalFood: true,
-        highlights: ['Kompleks bersejarah kemerdekaan', 'Bangunan arsitektur Moorish Sultan Abdul Samad']
+        time: '14.30 – 17.30',
+        activity: 'Istirahat Sore & Rooftop Pool di ibis KLCC',
+        transportMode: 'LRT_KTM',
+        transportLabel: 'LRT KELANA JAYA',
+        routeDetails: 'Dari Stasiun LRT Pasar Seni, naik LRT Jalur Kelana Jaya langsung menuju Stasiun LRT KLCC. Berjalan kaki kembali ke Ibis KLCC untuk istirahat, mandi, dan santai menikmati rooftop pool.',
+        location: 'Ibis KLCC',
+        highlights: ['Rooftop Pool & santai sore', 'Mandi & recharge energi']
       },
       {
         id: 'd5-5',
-        time: '13.00 – 14.30',
-        activity: 'Ibadah di Masjid Negara',
-        transportMode: 'JALAN_KAKI',
-        transportLabel: 'JALAN / GRAB',
-        routeDetails: 'Berjalan kaki / Grab singkat ke Masjid Negara Malaysia untuk beribadah dan melihat arsitektur kubah payung ikonik.',
-        location: 'Masjid Negara Malaysia',
-        highlights: ['Masjid Nasional Malaysia', 'Arsitektur kubah payung 16 bintang']
+        time: '17.30 – 21.30',
+        activity: 'Menuju Bukit Bintang via Grab Car & Eksplorasi Pavilion KL & Kuliner Malam',
+        transportMode: 'GRAB',
+        transportLabel: 'GRAB CAR (±10 MENIT)',
+        routeDetails: 'Pesan Grab Car langsung dari lobi Ibis KLCC menuju Mall Pavilion KL di kawasan Bukit Bintang (±10 menit). Lanjutkan berbelanja, berfoto di penyeberangan mini-Shibuya, dan makan malam kuliner malam.',
+        location: 'Pavilion KL & Bukit Bintang Crossing',
+        isHalalFood: true,
+        highlights: [
+          'Grab Car langsung dari lobi Ibis KLCC',
+          'Eksplorasi Pavilion KL & Bukit Bintang',
+          'Kuliner malam & mini-Shibuya crossing'
+        ]
       },
       {
         id: 'd5-6',
-        time: '14.30 – 15.30',
-        activity: 'Istirahat Sore di Ibis KLCC',
-        transportMode: 'LRT_KTM',
-        transportLabel: 'LRT KELANA JAYA',
-        routeDetails: 'Berjalan ke stasiun transit terdekat Pasar Seni, naik LRT Jalur Kelana Jaya (Arah Gombak - Tanpa Transit) → Turun di Stasiun LRT KLCC. Jalan kaki kembali ke Ibis KLCC untuk mendinginkan diri.',
-        location: 'Ibis KLCC'
-      },
-      {
-        id: 'd5-7',
-        time: '15.30 – 17.30',
-        activity: 'Menuju Bukit Bintang via Walkway',
-        transportMode: 'WALKWAY',
-        transportLabel: 'WALKWAY AC (1.2 KM)',
-        routeDetails: 'Dari area KLCC/Suria KLCC, jalan melewati KLCC - Bukit Bintang Walkway (jembatan terowongan layang khusus pejalan kaki ber-AC penuh sepanjang 1.2 Km / 15 menit), langsung tembus di dalam Mall Pavilion KL.',
-        location: 'KLCC to Bukit Bintang Pedestrian Walkway',
-        highlights: ['Terowongan jembatan layang ber-AC', 'Tembus langsung di Pavilion KL']
-      },
-      {
-        id: 'd5-8',
-        time: '17.30 – 21.30',
-        activity: 'Eksplorasi Pavilion & Gemerlap Bukit Bintang',
-        transportMode: 'JALAN_KAKI',
-        transportLabel: 'JALAN KAKI',
-        routeDetails: 'Berbelanja produk internasional di Pavilion KL, berfoto di persimpangan jalan hits lampu merah ikonik ala mini-Shibuya, serta makan malam kuliner di sekitar kawasan Bukit Bintang.',
-        location: 'Pavilion KL & Bukit Bintang Crossing',
-        isHalalFood: true,
-        highlights: ['Pavilion Mall', 'Persimpangan Mini-Shibuya Bukit Bintang', 'Makan malam kuliner']
-      },
-      {
-        id: 'd5-9',
         time: '21.30',
-        activity: 'Kembali ke Hotel & Packing',
-        transportMode: 'WALKWAY',
-        transportLabel: 'MRT / WALKWAY / GRAB',
-        routeDetails: 'Opsi 1: Jalan kaki balik via terowongan AC. Opsi 2: Naik MRT Bukit Bintang → Transit TRX ke Putrajaya Line → Turun di Stasiun MRT Persiaran KLCC (±400m ke Ibis KLCC). Opsi 3: Grab Car langsung ke Ibis KLCC. Setibanya di hotel langsung finalisasi packing koper.',
+        activity: 'Kembali ke Hotel via Grab Car & Packing',
+        transportMode: 'GRAB',
+        transportLabel: 'GRAB CAR (±10 MENIT)',
+        routeDetails: 'Pesan Grab Car dari Pavilion KL / Bukit Bintang kembali langsung ke lobi Ibis KLCC. Beristirahat dan melakukan finalisasi packing koper untuk persiapan kepulangan besok.',
         location: 'Ibis KLCC',
-        highlights: ['Opsi 1: Walkway AC', 'Opsi 2: MRT TRX Putrajaya Line', 'Opsi 3: Grab Car']
+        highlights: [
+          'Grab Car kembali ke Ibis KLCC',
+          'Finalisasi packing koper untuk penerbangan besok'
+        ]
       }
     ]
   },
