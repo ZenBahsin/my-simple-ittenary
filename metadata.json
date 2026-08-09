@@ -1,0 +1,6 @@
+{
+  "name": "Panduan Perjalanan SG-JO-KL 2026",
+  "description": "Itinerary interaktif 6 Hari 5 Malam Singapura, Johor, dan Kuala Lumpur (13-18 Agustus 2026) dengan rute transportasi, panduan hotel, tempat halal, dan ceklis mandiri.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
