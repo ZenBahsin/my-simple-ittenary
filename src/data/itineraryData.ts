@@ -250,7 +250,7 @@ export const ITINERARY_DAYS: DayItinerary[] = [
         activity: 'Perjalanan Grab & Kunjungan ke Kolej 10 UTM Skudai',
         transportMode: 'GRAB',
         transportLabel: 'GRABCAR (±25–35 MENIT)',
-        routeDetails: 'Setelah lolos imigrasi Malaysia di JB CIQ, pesan GrabCar dari titik jemput JB Sentral/JB CIQ langsung menuju Kolej 10 UTM Skudai. Jarak tempuh sekitar 22–24 km via Lebuhraya Skudai (Route 1) dengan estimasi waktu 25–35 menit. Lebih cepat, nyaman, dan langsung turun tepat di depan Kolej 10 UTM tanpa perlu ganti bus.',
+        routeDetails: 'Dari JB CIQ / JB Sentral, pesan GrabCar langsung ke Kolej 10 UTM Skudai (±23 km, 25–35 menit, RM 25–35). Praktis dan langsung turun di lokasi.',
         location: 'Kolej 10, Universiti Teknologi Malaysia (UTM) Skudai',
         highlights: [
           'GrabCar langsung dari JB Sentral / JB CIQ ke Kolej 10 UTM',
