@@ -125,8 +125,8 @@ export const ITINERARY_DAYS: DayItinerary[] = [
     dayNumber: 2,
     date: '14 Agt 2026',
     dateFull: 'Jumat, 14 Agustus 2026',
-    title: 'Belanja & Atraksi Singapura',
-    subtitle: 'Orchard, Chinatown & Marina Bay Sands',
+    title: 'Sentosa, VivoCity, Chinatown & Spectra Show',
+    subtitle: 'Kampong Glam Cafe, Chinatown, VivoCity, USS Globe, Siloso Beach & MBS Spectra',
     countries: ['Singapura'],
     flags: '🇸🇬',
     hotelName: 'HOTEL JJH',
@@ -134,83 +134,114 @@ export const ITINERARY_DAYS: DayItinerary[] = [
     items: [
       {
         id: 'd2-1',
-        time: '08.00',
-        activity: 'Sarapan Pagi',
+        time: '08.30 – 09.30',
+        activity: 'Sarapan Pagi di Kampong Glam Cafe',
         transportMode: 'JALAN_KAKI',
-        transportLabel: 'KULINER LOKAL',
-        routeDetails: 'Menikmati sarapan lokal di sekitar Kampong Glam / North Bridge Road dekat hotel.',
-        location: 'Kampong Glam / North Bridge Rd',
-        isHalalFood: true
+        transportLabel: 'JALAN KAKI (3 MENIT)',
+        routeDetails: 'Jalan kaki 3 menit dari Hotel JJH. Nikmati Lontong Sayur, Mee Rebus, atau Nasi Lemak + Teh Tarik panas.',
+        location: 'Kampong Glam Cafe',
+        isHalalFood: true,
+        highlights: ['Lontong Sayur & Mee Rebus', 'Nasi Lemak + Teh Tarik panas', '3 menit jalan kaki dari Hotel JJH']
       },
       {
         id: 'd2-2',
-        time: '09.00 – 12.00',
-        activity: 'Orchard Road (ION & Takashimaya)',
+        time: '09.30 – 09.50',
+        activity: 'Perjalanan ke Chinatown',
         transportMode: 'MRT_BIRU',
-        transportLabel: 'MRT JALUR BIRU & MERAH',
-        routeDetails: 'Dari Stasiun MRT Bugis (DT14), naik Downtown Line → Transit di Newton ke North South Line (Jalur Merah) → Turun di Stasiun MRT Orchard. (Alternatif bus: Naik Bus Kota No. 7 / 130 dari halte bus persis depan Hotel JJH langsung ke Orchard Road!).',
-        location: 'Orchard Road',
-        highlights: ['ION Orchard', 'Takashimaya Department Store', 'Opsi Bus Kota No. 7 / 130']
+        transportLabel: 'MRT DOWNTOWN LINE (JALUR BIRU)',
+        routeDetails: 'Dari Stasiun MRT Bugis, naik Downtown Line (Jalur Biru) langsung turun di Stasiun MRT Chinatown (pintu keluar Pagoda Street).',
+        location: 'Stasiun MRT Bugis → MRT Chinatown',
+        highlights: ['Downtown Line langsung tanpa transit', 'Pintu keluar Pagoda Street']
       },
       {
         id: 'd2-3',
-        time: '12.00 – 13.00',
-        activity: 'Makan Siang Halal',
+        time: '09.50 – 11.20',
+        activity: 'Chinatown Singapore (1,5 Jam)',
         transportMode: 'JALAN_KAKI',
-        transportLabel: 'FOOD COURT HALAL',
-        routeDetails: 'Makan siang di kawasan Orchard Road (banyak pilihan kedai / food court bersertifikasi halal).',
-        location: 'Orchard Road Food Court',
-        isHalalFood: true
+        transportLabel: 'EKSPLORASI KAKI',
+        routeDetails: 'Waktu puas 1,5 jam untuk eksplor Pagoda Street & Trengganu Street, foto-foto arsitektur ruko klasik, dan berburu souvenir murah.',
+        location: 'Chinatown (Pagoda St & Trengganu St)',
+        highlights: ['Pagoda Street & Trengganu Street', 'Foto arsitektur ruko klasik', 'Berburu souvenir murah']
       },
       {
         id: 'd2-4',
-        time: '13.00 – 15.00',
-        activity: 'Chinatown Singapore',
+        time: '11.20 – 11.50',
+        activity: 'Perjalanan ke VivoCity (Buffer Santai 30 Menit)',
         transportMode: 'MRT_UNGU',
-        transportLabel: 'MRT JALUR UNGU',
-        routeDetails: 'Dari Stasiun MRT Orchard, naik Jalur Merah → Transit di Dhoby Ghaut ke North East Line → Turun di Stasiun MRT Chinatown untuk wisata budaya dan suvenir murah.',
-        location: 'Chinatown Singapore',
-        highlights: ['Wisata budaya', 'Pasar suvenir murah']
+        transportLabel: 'MRT NORTH EAST LINE (JALUR UNGU)',
+        routeDetails: 'Dari Stasiun MRT Chinatown, naik North East Line (Jalur Ungu) ke Stasiun MRT HarbourFront. Waktu 30 menit ini cukup untuk jalan santai ke peron, naik kereta, hingga masuk ke dalam mall VivoCity.',
+        location: 'Stasiun MRT Chinatown → MRT HarbourFront (VivoCity)',
+        highlights: ['Jalur Ungu direct ke HarbourFront', 'Buffer santai 30 menit']
       },
       {
         id: 'd2-5',
-        time: '15.00 – 17.00',
-        activity: 'Marina Bay Sands & Belanja',
-        transportMode: 'MRT_BIRU',
-        transportLabel: 'MRT JALUR BIRU',
-        routeDetails: 'Dari Stasiun MRT Chinatown, langsung naik Downtown Line (Jalur Biru - Tanpa Transit) → Turun di Stasiun MRT Bayfront (terhubung langsung ke The Shoppes at Marina Bay Sands).',
-        location: 'The Shoppes at Marina Bay Sands',
-        highlights: ['Bayfront Station direct', 'The Shoppes Mall']
+        time: '11.50 – 13.30',
+        activity: 'DJI Store VivoCity & Makan Siang',
+        transportMode: 'JALAN_KAKI',
+        transportLabel: 'VIVOCITY & MAKAN SIANG',
+        routeDetails: 'Mengunjungi DJI Authorised Store di VivoCity. Lanjut makan siang santai di food court / restoran halal area VivoCity (misal Food Republic, Texas Chicken, Ayam Penyet Ria).',
+        location: 'VivoCity Mall (DJI Store & Area Food Court)',
+        isHalalFood: true,
+        highlights: ['DJI Authorised Store VivoCity', 'Makan Siang Halal: Food Republic / Texas Chicken / Ayam Penyet Ria']
       },
       {
         id: 'd2-6',
-        time: '17.00 – 20.00',
-        activity: 'Makan Malam & Santai',
-        transportMode: 'JALAN_KAKI',
-        transportLabel: 'DINING & RELAX',
-        routeDetails: 'Makan malam santai di food court Rasapura Masters MBS / Makansutra Gluttons Bay sambil menunggu pertunjukan malam.',
-        location: 'Rasapura Masters / Makansutra Gluttons Bay',
-        isHalalFood: true,
-        highlights: ['Rasapura Masters MBS', 'Makansutra Gluttons Bay']
+        time: '13.30 – 17.30',
+        activity: 'Sentosa Island: Foto USS Globe & Pantai',
+        transportMode: 'TRANSIT',
+        transportLabel: 'SENTOSA EXPRESS MONORAIL',
+        routeDetails: 'Naik Sentosa Express dari Lantai 3 VivoCity. Stop 1 (Resorts World Station): Foto-foto di Bola Dunia Universal Studios Singapore (USS Globe). Stop 2 (Beach Station): Lanjut naik monorail ke Beach Station. Bersantai di Siloso Beach atau Palawan Beach (bisa pakai beach tram gratis).',
+        location: 'Sentosa Island (USS Globe & Siloso/Palawan Beach)',
+        highlights: [
+          'Sentosa Express dari Lantai 3 VivoCity',
+          'Stop 1 (Resorts World Station): Foto USS Globe',
+          'Stop 2 (Beach Station): Siloso Beach / Palawan Beach (Beach Tram gratis)'
+        ]
       },
       {
         id: 'd2-7',
-        time: '20.00 – 20.30',
-        activity: 'Spectra Light & Water Show',
-        transportMode: 'JALAN_KAKI',
-        transportLabel: 'JALAN KAKI',
-        routeDetails: 'Berjalan ke pelataran luar (Event Plaza) Marina Bay Sands untuk menonton pertunjukan air mancur, efek laser, dan lampu visual.',
-        location: 'Event Plaza Marina Bay Sands',
-        highlights: ['Pertunjukan air mancur gratis', 'Laser & lampu visual']
+        time: '17.30 – 18.00',
+        activity: 'Perjalanan dari VivoCity ke Marina Bay Sands',
+        transportMode: 'MRT_BIRU',
+        transportLabel: 'MRT UNGU + BIRU (TRANSIT CHINATOWN)',
+        routeDetails: 'Dari Stasiun MRT HarbourFront, naik Jalur Ungu ke Chinatown ➔ Transit ke Jalur Biru (Downtown Line) ➔ Turun di Stasiun MRT Bayfront.',
+        location: 'Stasiun MRT HarbourFront → MRT Bayfront (MBS)',
+        highlights: ['HarbourFront (Ungu) → Transit Chinatown → Bayfront (Biru)']
       },
       {
         id: 'd2-8',
-        time: '21.00',
+        time: '18.00 – 20.00',
+        activity: 'Marina Bay Sands & Makan Malam',
+        transportMode: 'JALAN_KAKI',
+        transportLabel: 'MBS & DINING',
+        routeDetails: 'Jalan santai di tepi danau, foto skyline malam, dan makan malam di food court Rasapura Masters (lokasi di dalam mall MBS) atau area sekitar. 20 Menit Sebelum Show: Berjalan ke pelataran luar (Event Plaza) di depan mall MBS untuk cari posisi duduk nyaman di dek kayu.',
+        location: 'The Shoppes at Marina Bay Sands & Event Plaza',
+        isHalalFood: true,
+        highlights: [
+          'Skyline malam Marina Bay',
+          'Makan malam di Rasapura Masters MBS',
+          'Dek kayu Event Plaza (posisi duduk nyaman)'
+        ]
+      },
+      {
+        id: 'd2-9',
+        time: '20.00 – 20.15',
+        activity: 'Pertunjukan Spectra – A Light & Water Show',
+        transportMode: 'JALAN_KAKI',
+        transportLabel: 'EVENT PLAZA MBS',
+        routeDetails: 'Menonton pertunjukan gratis air mancur, lampu laser, dan musik berdurasi 15 menit.',
+        location: 'Event Plaza Marina Bay Sands',
+        highlights: ['Pertunjukan air mancur, laser & musik spektakuler (15 Menit)', 'Gratis di Event Plaza MBS']
+      },
+      {
+        id: 'd2-10',
+        time: '20.15 – 20.45',
         activity: 'Kembali ke Hotel JJH',
         transportMode: 'MRT_BIRU',
-        transportLabel: 'MRT JALUR BIRU',
-        routeDetails: 'Dari Stasiun MRT Bayfront, langsung naik Downtown Line → Turun di Stasiun MRT Bugis (DT14). Jalan kaki 5 menit ke Hotel JJH. Istirahat dan mencicil persiapan bagasi.',
-        location: 'Hotel JJH'
+        transportLabel: 'MRT DOWNTOWN LINE (JALUR BIRU)',
+        routeDetails: 'Masuk ke Stasiun MRT Bayfront, naik Downtown Line (Jalur Biru) arah Bukit Panjang ➔ Turun di Stasiun MRT Bugis (Exit B) ➔ Jalan kaki 5 menit sampai di Hotel JJH untuk istirahat.',
+        location: 'Hotel JJH (via MRT Bugis Exit B)',
+        highlights: ['MRT Bayfront langsung ke Bugis (Exit B)', 'Jalan kaki 5 menit ke Hotel JJH']
       }
     ]
   },
